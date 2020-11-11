@@ -1,0 +1,15 @@
+{
+  "name": "hair-storm",
+  "version": "1.0.0",
+  "description": "Landing page for Hair-Storm ",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss dist/css/style.css -w"
+  },
+  "author": "Nenad Stojanovic",
+  "license": "ISC",
+  "devDependencies": {
+    "node": "^15.0.1",
+    "node-sass": "^5.0.0"
+  }
+}

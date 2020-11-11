@@ -1,0 +1,112 @@
+.contact {
+  &__heading-main {
+    text-align: center;
+    padding: 4rem 0 3rem 0;
+    margin-bottom: 5rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    position: relative;
+    background-color: $color-white;
+  }
+
+  &__heading-main::before {
+    position: absolute;
+    background: $color-brown;
+    height: 0.2rem;
+    content: "";
+    width: 12%;
+  }
+
+  &__heading-main::after {
+    position: absolute;
+    background: $color-brown;
+    height: 0.2rem;
+    content: "";
+    width: 17%;
+    right: 41.5%;
+    bottom: 25%;
+  }
+
+  &__icon-header {
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    right: 49%;
+    bottom: 65%;
+    fill: $color-brown;
+    margin-bottom: 0.2rem;
+  }
+
+  &__adress {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: 80%;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    border: 0.5rem double $color-black;
+    padding: 3rem 0;
+  }
+
+  &__card-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    display: flex;
+    flex-basis: 24%;
+    background-color: $color-black;
+    color: $color-white;
+    padding: 3rem 2rem;
+  }
+
+  &__icon-box {
+    background-color: $color-brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-white;
+  }
+
+  &__text-box {
+    margin-left: 1rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text-bold {
+    font-size: 1.3rem;
+  }
+
+  &__text-thin {
+    font-size: 1.3rem;
+  }
+
+  &__phone {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__email {
+    text-decoration: none;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,110 @@
+.price {
+  &__heading-main {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    position: relative;
+    background-color: $color-white;
+  }
+
+  &__heading-main::before {
+    position: absolute;
+    background: $color-brown;
+    height: 0.2rem;
+    content: "";
+    width: 12%;
+  }
+
+  &__heading-main::after {
+    position: absolute;
+    background: $color-brown;
+    height: 0.2rem;
+    content: "";
+    width: 17%;
+    right: 41.5%;
+    bottom: 25%;
+  }
+
+  &__icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    right: 49%;
+    bottom: 65%;
+    fill: $color-brown;
+    margin-bottom: 0.2rem;
+  }
+
+  &__container {
+    background-image: radial-gradient(
+        rgba($color-black, 0.7),
+        rgba($color-black, 0.4)
+      ),
+      url(..//img/p1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    padding: 3rem 0;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  &__card {
+    border: 5px double $color-white;
+    padding: 5rem 5rem;
+    flex-basis: 30%;
+  }
+
+  &__card--left {
+    background-color: rgba($color-brown, 0.8);
+    color: $color-white;
+  }
+
+  &__card--right {
+    background-color: rgba($color-black, 0.3);
+    color: $color-white;
+  }
+
+  &__heading-sub {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    border-bottom: 1px dotted $color-white;
+    padding-top: 2rem;
+  }
+
+  &__btn-box {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  &__btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+
+    &--orange {
+      background-color: $color-white;
+      color: $color-brown;
+    }
+
+    &--white {
+      background-color: $color-brown;
+      color: $color-white;
+    }
+  }
+}

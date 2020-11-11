@@ -1,0 +1,56 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba($color-black, 0.3);
+  width: 100%;
+  // border-bottom: 2px solid $color-brown;
+  font-family: "Playfair Display", sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+
+  &__list {
+    text-align: center;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color-brown;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: darken($color-brown, 25%);
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 4rem;
+  }
+
+  &__item {
+    display: inline-block;
+    font-size: 1.6rem;
+  }
+
+  &__icon-link:link,
+  &__icon-link:visited {
+    fill: $color-brown;
+    transition: all 0.2s;
+  }
+
+  &__icon-link:hover,
+  &__icon-link:active {
+    fill: darken($color-brown, 25%);
+  }
+
+  &__icon-link:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}

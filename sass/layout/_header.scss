@@ -1,0 +1,96 @@
+.header {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.4)
+    ),
+    url(..//img/112.jpg), url(../img/dott.pnt);
+  background-size: 0.4rem, cover;
+  background-position: center, center;
+  background-repeat: repeat, no-repeat;
+  min-height: 100vh;
+  position: relative;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo-box {
+    background-color: $color-brown;
+    border-radius: 50%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  &__logo-item {
+    height: 100%;
+  }
+
+  &__logo {
+    height: 3rem;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 5rem;
+    left: 20rem;
+  }
+
+  &__text-box {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 500;
+  }
+
+  &__text {
+    color: $color-brown;
+    font-size: 2rem;
+  }
+
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: $color-brown;
+    margin-left: 2rem;
+    margin-bottom: -0.5rem;
+  }
+
+  &__phone {
+    color: $color-brown;
+    text-decoration: none;
+  }
+
+  &__box {
+    margin-top: 8rem;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-family: "Playfair Display", sans-serif;
+    text-align: center;
+    letter-spacing: 0.5rem;
+
+    backface-visibility: hidden;
+    &--main {
+      font-size: 5rem;
+
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+
+    &--sub {
+      font-size: 2rem;
+
+      animation: moveInRight 1s ease-out;
+    }
+  }
+  &__text-brown {
+    color: $color-brown;
+  }
+
+  &__text-white {
+    color: $color-white;
+  }
+}

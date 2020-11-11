@@ -1,0 +1,103 @@
+.gallery {
+  &__heading-main {
+    text-align: center;
+    padding: 4rem 0 3rem 0;
+    font-size: 3.5rem;
+    font-weight: 500;
+    position: relative;
+    background-color: $color-white;
+  }
+
+  &__heading-main::before {
+    position: absolute;
+    background: $color-brown;
+    height: 0.2rem;
+    content: "";
+    width: 12%;
+  }
+
+  &__heading-main::after {
+    position: absolute;
+    background: $color-brown;
+    height: 0.2rem;
+    content: "";
+    width: 17%;
+    right: 41.5%;
+    bottom: 25%;
+  }
+
+  &__icon-header {
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    right: 49%;
+    bottom: 65%;
+    fill: $color-brown;
+    margin-bottom: 0.2rem;
+  }
+
+  &__icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon-card {
+    margin-top: 2rem;
+  }
+
+  &__icon-face {
+    height: 4.5rem;
+    width: 4.5rem;
+    fill: #4267b2;
+    margin-right: 3rem;
+  }
+
+  &__icon-insta {
+    height: 4.5rem;
+    width: 4.5rem;
+    fill: orangered;
+  }
+
+  &__grid {
+    columns: 5 20rem;
+    column-gap: 5rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__image-box {
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 0.2rem black;
+    padding: 0.3rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-in-out;
+    &:hover .gallery__img {
+      filter: grayscale(0);
+    }
+    &:hover {
+      border-color: $color-brown;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    filter: grayscale(100%);
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-in-out;
+  }
+  &__text {
+    margin: 0.5rem 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+  }
+
+  &__text-big {
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+  }
+}

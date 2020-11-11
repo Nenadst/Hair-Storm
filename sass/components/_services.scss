@@ -1,0 +1,108 @@
+.services {
+  &__heading-main {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    position: relative;
+    background-color: $color-white;
+  }
+
+  &__heading-main::before {
+    position: absolute;
+    background: $color-brown;
+    height: 0.2rem;
+    content: "";
+    width: 12%;
+  }
+
+  &__heading-main::after {
+    position: absolute;
+    background: $color-brown;
+    height: 0.2rem;
+    content: "";
+    width: 17%;
+    right: 41.5%;
+    bottom: 25%;
+  }
+
+  &__icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    right: 49%;
+    bottom: 65%;
+    fill: $color-brown;
+    margin-bottom: 0.2rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__box--1 {
+    background-color: rgba($color-white, 0.8);
+    margin-top: 5rem;
+    display: flex;
+    width: 50%;
+  }
+
+  &__text-box {
+    padding: 2rem;
+  }
+
+  &__heading-sub {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &__text {
+    margin: 3rem 0;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+  }
+
+  &__box--2 {
+    background-color: rgba($color-gray, 0.8);
+    display: flex;
+    width: 50%;
+    align-self: flex-end;
+  }
+
+  &__box--3 {
+    background-color: rgba($color-white, 0.8);
+    display: flex;
+    width: 50%;
+  }
+
+  &__box--4 {
+    background-color: rgba($color-gray, 0.8);
+    display: flex;
+    width: 50%;
+    align-self: flex-end;
+    margin-bottom: 5rem;
+  }
+
+  &__card-btn {
+    text-decoration: none;
+    color: $color-brown;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+  }
+
+  &__card-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: $color-brown;
+    margin-left: 0.5rem;
+  }
+}
