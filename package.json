@@ -4,12 +4,17 @@
   "description": "Landing page for Hair-Storm ",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss dist/css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss dist/css/style.css -w",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Nenad Stojanovic",
   "license": "ISC",
   "devDependencies": {
     "node": "^15.0.1",
     "node-sass": "^5.0.0"
+  },
+  "homepage":"https://github.com/Nenadst/Hair-Storm",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
