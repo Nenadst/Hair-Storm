@@ -53,7 +53,7 @@ body {
     background: sandybrown;
     height: 0.2rem;
     content: "";
-    width: 12%; }
+    width: 14%; }
   .about__heading::after {
     position: absolute;
     background: sandybrown;
@@ -199,15 +199,15 @@ body {
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 12%; }
+  width: 11.5%; }
 
 .contact__heading-main::after {
   position: absolute;
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 17%;
-  right: 41.5%;
+  width: 16%;
+  right: 43%;
   bottom: 25%; }
 
 .contact__icon-header {
@@ -266,7 +266,8 @@ body {
   flex-direction: column; }
 
 .contact__text-bold {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  padding-bottom: 1rem; }
 
 .contact__text-thin {
   font-size: 1.3rem; }
@@ -322,15 +323,15 @@ body {
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 12%; }
+  width: 11%; }
 
 .gallery__heading-main::after {
   position: absolute;
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 17%;
-  right: 41.5%;
+  width: 14%;
+  right: 43%;
   bottom: 25%; }
 
 .gallery__icon-header {
@@ -348,18 +349,46 @@ body {
   align-items: center; }
 
 .gallery__icon-card {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  display: flex; }
+
+.gallery__icon-card-left {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 3rem;
+  padding: 1rem; }
+
+.gallery__icon-card-right {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 5rem 1rem 1rem;
+  margin-left: 3rem; }
+
+.gallery__link {
+  text-decoration: none;
+  font-size: 1.3rem; }
+
+.gallery__text-face {
+  font-size: 1.5rem;
+  color: #4267b2;
+  margin-bottom: 0.5rem; }
+
+.gallery__text-insta {
+  font-size: 1.5rem;
+  color: orange;
+  margin-bottom: 0.5rem; }
 
 .gallery__icon-face {
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   fill: #4267b2;
-  margin-right: 3rem; }
+  margin-right: 1.5rem; }
 
 .gallery__icon-insta {
-  height: 4.5rem;
-  width: 4.5rem;
-  fill: orangered; }
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: orange;
+  margin-right: 1.5rem; }
 
 .gallery__grid {
   columns: 5 20rem;
@@ -394,9 +423,11 @@ body {
   font-style: italic; }
 
 .gallery__text-big {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
-  font-style: italic; }
+  letter-spacing: 0.2rem;
+  font-style: italic;
+  margin-top: 3rem; }
 
 .popup {
   height: 100vh;
@@ -468,15 +499,15 @@ body {
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 12%; }
+  width: 13%; }
 
 .price__heading-main::after {
   position: absolute;
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 17%;
-  right: 41.5%;
+  width: 16%;
+  right: 42%;
   bottom: 25%; }
 
 .price__icon {
@@ -544,15 +575,15 @@ body {
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 12%; }
+  width: 10%; }
 
 .services__heading-main::after {
   position: absolute;
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 17%;
-  right: 41.5%;
+  width: 12%;
+  right: 44%;
   bottom: 25%; }
 
 .services__icon {
@@ -722,11 +753,11 @@ body {
   padding-bottom: 5rem; }
 
 .section-services {
-  background-image: url(../img/119.jpg);
+  background-image: url(../img/113.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-color: #000;
   margin: 5rem 0; }
 
@@ -734,4 +765,4 @@ body {
   padding: 5rem 0; }
 
 .section-contact {
-  padding-bottom: 5rem; }
+  padding: 5rem 0; }
