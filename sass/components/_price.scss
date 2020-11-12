@@ -90,21 +90,4 @@
     margin-top: 4rem;
     text-align: center;
   }
-
-  &__btn {
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    padding: 1rem 2rem;
-
-    &--orange {
-      background-color: $color-white;
-      color: $color-brown;
-    }
-
-    &--white {
-      background-color: $color-brown;
-      color: $color-white;
-    }
-  }
 }

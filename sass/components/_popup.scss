@@ -47,23 +47,6 @@
     hyphens: auto;
   }
 
-  &__btn {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    display: inline-block;
-    border-radius: 100rem;
-    margin-top: 2rem;
-    width: 20%;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    background-color: $color-brown;
-    color: $color-white;
-  }
-
   &:target {
     opacity: 1;
     visibility: visible;

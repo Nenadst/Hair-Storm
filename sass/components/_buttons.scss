@@ -1,0 +1,56 @@
+.btn-text {
+  text-decoration: none;
+  color: $color-brown;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+}
+
+.btn-popup {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 100rem;
+  margin-top: 2rem;
+  width: 20%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: $color-brown;
+  color: $color-white;
+}
+
+.btn__price {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+
+  &--white {
+    background-color: $color-white;
+    color: $color-brown;
+  }
+
+  &--orange {
+    background-color: $color-brown;
+    color: $color-white;
+  }
+}
+
+.btn-form {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: $color-brown;
+  color: $color-white;
+}

@@ -130,17 +130,60 @@ body {
     padding: 8.5rem 0;
     background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer; }
-  .about__card-btn {
-    text-decoration: none;
-    color: sandybrown;
-    font-size: 1.3rem;
-    font-weight: 600;
-    display: flex; }
   .about__card-icon {
     height: 1.5rem;
     width: 1.5rem;
     fill: sandybrown;
     margin-left: 0.5rem; }
+
+.btn-text {
+  text-decoration: none;
+  color: sandybrown;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex; }
+
+.btn-popup {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 100rem;
+  margin-top: 2rem;
+  width: 20%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: sandybrown;
+  color: #fff; }
+
+.btn__price {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem 2rem; }
+  .btn__price--white {
+    background-color: #fff;
+    color: sandybrown; }
+  .btn__price--orange {
+    background-color: sandybrown;
+    color: #fff; }
+
+.btn-form {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: sandybrown;
+  color: #fff; }
 
 .contact__heading-main {
   text-align: center;
@@ -265,19 +308,6 @@ body {
       display: inline-block; }
     .form__input::-webkit-input-placeholder {
       color: #fff; }
-  .form__btn {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    display: inline-block;
-    border-radius: 0.3rem;
-    margin-top: 2rem;
-    font-size: 1.3rem;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    background-color: sandybrown;
-    color: #fff; }
 
 .gallery__heading-main {
   text-align: center;
@@ -406,21 +436,6 @@ body {
     column-gap: 4rem;
     column-rule: 0.1rem solid rgba(0, 0, 0, 0.3);
     hyphens: auto; }
-  .popup__btn {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    display: inline-block;
-    border-radius: 100rem;
-    margin-top: 2rem;
-    width: 20%;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    background-color: sandybrown;
-    color: #fff; }
   .popup:target {
     opacity: 1;
     visibility: visible;
@@ -515,18 +530,6 @@ body {
   margin-top: 4rem;
   text-align: center; }
 
-.price__btn {
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 600;
-  padding: 1rem 2rem; }
-  .price__btn--orange {
-    background-color: #fff;
-    color: sandybrown; }
-  .price__btn--white {
-    background-color: sandybrown;
-    color: #fff; }
-
 .services__heading-main {
   text-align: center;
   padding-top: 4rem;
@@ -605,13 +608,6 @@ body {
   width: 50%;
   align-self: flex-end;
   margin-bottom: 5rem; }
-
-.services__card-btn {
-  text-decoration: none;
-  color: sandybrown;
-  font-size: 1.3rem;
-  font-weight: 600;
-  display: flex; }
 
 .services__card-icon {
   height: 1.5rem;
@@ -726,11 +722,12 @@ body {
   padding-bottom: 5rem; }
 
 .section-services {
-  background-image: url(../img/1.jpg);
+  background-image: url(../img/119.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
+  background-color: #000;
   margin: 5rem 0; }
 
 .section-gallery {
