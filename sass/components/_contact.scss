@@ -14,7 +14,7 @@
     background: $color-brown;
     height: 0.2rem;
     content: "";
-    width: 12%;
+    width: 11.5%;
   }
 
   &__heading-main::after {
@@ -22,8 +22,8 @@
     background: $color-brown;
     height: 0.2rem;
     content: "";
-    width: 17%;
-    right: 41.5%;
+    width: 16%;
+    right: 43%;
     bottom: 25%;
   }
 
@@ -94,6 +94,7 @@
 
   &__text-bold {
     font-size: 1.3rem;
+    padding-bottom: 1rem;
   }
 
   &__text-thin {

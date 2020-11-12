@@ -13,7 +13,7 @@
     background: $color-brown;
     height: 0.2rem;
     content: "";
-    width: 12%;
+    width: 11%;
   }
 
   &__heading-main::after {
@@ -21,8 +21,8 @@
     background: $color-brown;
     height: 0.2rem;
     content: "";
-    width: 17%;
-    right: 41.5%;
+    width: 14%;
+    right: 43%;
     bottom: 25%;
   }
 
@@ -44,19 +44,51 @@
 
   &__icon-card {
     margin-top: 2rem;
+    display: flex;
+  }
+
+  &__icon-card-left {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 3rem;
+    padding: 1rem;
+  }
+  &__icon-card-right {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem 5rem 1rem 1rem;
+    margin-left: 3rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+  &__text-face {
+    font-size: 1.5rem;
+    color: $color-face;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text-insta {
+    font-size: 1.5rem;
+    color: $color-insta;
+    margin-bottom: 0.5rem;
   }
 
   &__icon-face {
-    height: 4.5rem;
-    width: 4.5rem;
-    fill: #4267b2;
-    margin-right: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-face;
+    margin-right: 1.5rem;
   }
 
   &__icon-insta {
-    height: 4.5rem;
-    width: 4.5rem;
-    fill: orangered;
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-insta;
+    margin-right: 1.5rem;
   }
 
   &__grid {
@@ -96,8 +128,10 @@
   }
 
   &__text-big {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
+    letter-spacing: 0.2rem;
     font-style: italic;
+    margin-top: 3rem;
   }
 }
