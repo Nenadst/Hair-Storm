@@ -64,33 +64,4 @@
   &__box {
     margin-top: 8rem;
   }
-
-  &__heading {
-    text-transform: uppercase;
-    font-family: "Playfair Display", sans-serif;
-    text-align: center;
-    letter-spacing: 0.5rem;
-
-    backface-visibility: hidden;
-    &--main {
-      font-size: 5rem;
-
-      animation-name: moveInLeft;
-      animation-duration: 1s;
-      animation-timing-function: ease-out;
-    }
-
-    &--sub {
-      font-size: 2rem;
-
-      animation: moveInRight 1s ease-out;
-    }
-  }
-  &__text-brown {
-    color: $color-brown;
-  }
-
-  &__text-white {
-    color: $color-white;
-  }
 }

@@ -1,38 +1,39 @@
 .services {
-  &__heading-main {
-    text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-    font-size: 3.5rem;
-    font-weight: 500;
-    position: relative;
-    background-color: $color-white;
-  }
+  @include heading-top(0, -7rem, 10%, 12%, 44%);
+  // &__heading-main {
+  //   text-align: center;
+  //   padding-top: 4rem;
+  //   padding-bottom: 3rem;
+  //   font-size: 3.5rem;
+  //   font-weight: 500;
+  //   position: relative;
+  //   background-color: $color-white;
+  // }
 
-  &__heading-main::before {
-    position: absolute;
-    background: $color-brown;
-    height: 0.2rem;
-    content: "";
-    width: 10%;
-  }
+  // &__heading-main::before {
+  //   position: absolute;
+  //   background: $color-brown;
+  //   height: 0.2rem;
+  //   content: "";
+  //   width: 10%;
+  // }
 
-  &__heading-main::after {
-    position: absolute;
-    background: $color-brown;
-    height: 0.2rem;
-    content: "";
-    width: 12%;
-    right: 44%;
-    bottom: 25%;
-  }
+  // &__heading-main::after {
+  //   position: absolute;
+  //   background: $color-brown;
+  //   height: 0.2rem;
+  //   content: "";
+  //   width: 12%;
+  //   right: 44%;
+  //   bottom: 25%;
+  // }
 
   &__icon {
     height: 3.5rem;
     width: 3.5rem;
     position: absolute;
     right: 49%;
-    bottom: 65%;
+    bottom: 100%;
     fill: $color-brown;
     margin-bottom: 0.2rem;
   }

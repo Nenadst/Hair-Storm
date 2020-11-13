@@ -1,38 +1,39 @@
 .price {
-  &__heading-main {
-    text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-    font-size: 3.5rem;
-    font-weight: 500;
-    position: relative;
-    background-color: $color-white;
-  }
+  @include heading-top(0, -3rem, 13%, 16%, 42%);
+  // &__heading-main {
+  //   text-align: center;
+  //   padding-top: 4rem;
+  //   padding-bottom: 3rem;
+  //   font-size: 3.5rem;
+  //   font-weight: 500;
+  //   position: relative;
+  //   background-color: $color-white;
+  // }
 
-  &__heading-main::before {
-    position: absolute;
-    background: $color-brown;
-    height: 0.2rem;
-    content: "";
-    width: 13%;
-  }
+  // &__heading-main::before {
+  //   position: absolute;
+  //   background: $color-brown;
+  //   height: 0.2rem;
+  //   content: "";
+  //   width: 13%;
+  // }
 
-  &__heading-main::after {
-    position: absolute;
-    background: $color-brown;
-    height: 0.2rem;
-    content: "";
-    width: 16%;
-    right: 42%;
-    bottom: 25%;
-  }
+  // &__heading-main::after {
+  //   position: absolute;
+  //   background: $color-brown;
+  //   height: 0.2rem;
+  //   content: "";
+  //   width: 16%;
+  //   right: 42%;
+  //   bottom: 25%;
+  // }
 
   &__icon {
     height: 3.5rem;
     width: 3.5rem;
     position: absolute;
     right: 49%;
-    bottom: 65%;
+    bottom: 100%;
     fill: $color-brown;
     margin-bottom: 0.2rem;
   }
@@ -78,7 +79,7 @@
     margin-bottom: 3rem;
   }
 
-  &__heading {
+  &__heading-card {
     display: flex;
     justify-content: space-between;
     font-size: 1.5rem;

@@ -1,3 +1,32 @@
+@mixin heading-top($margin, $top, $width-before, $width-after, $right-after) {
+  &__heading {
+    text-align: center;
+    margin-top: $margin;
+    font-size: 3.5rem;
+    font-weight: 500;
+    position: relative;
+    top: $top;
+  }
+
+  &__heading::before {
+    position: absolute;
+    background: $color-brown;
+    height: 0.2rem;
+    content: "";
+    width: $width-before;
+  }
+
+  &__heading::after {
+    position: absolute;
+    background: $color-brown;
+    height: 0.2rem;
+    content: "";
+    width: $width-after;
+    right: $right-after;
+    bottom: 0%;
+  }
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint == small-phone {
     @media only screen and (max-width: 20em) {

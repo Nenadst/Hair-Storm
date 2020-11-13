@@ -1,38 +1,39 @@
 .contact {
-  &__heading-main {
-    text-align: center;
-    padding: 4rem 0 3rem 0;
-    margin-bottom: 5rem;
-    font-size: 3.5rem;
-    font-weight: 500;
-    position: relative;
-    background-color: $color-white;
-  }
+  @include heading-top(0, 0, 11.5%, 14%, 43%);
+  // &__heading-main {
+  //   text-align: center;
+  //   padding: 4rem 0 3rem 0;
+  //   margin-bottom: 5rem;
+  //   font-size: 3.5rem;
+  //   font-weight: 500;
+  //   position: relative;
+  //   background-color: $color-white;
+  // }
 
-  &__heading-main::before {
-    position: absolute;
-    background: $color-brown;
-    height: 0.2rem;
-    content: "";
-    width: 11.5%;
-  }
+  // &__heading-main::before {
+  //   position: absolute;
+  //   background: $color-brown;
+  //   height: 0.2rem;
+  //   content: "";
+  //   width: 11.5%;
+  // }
 
-  &__heading-main::after {
-    position: absolute;
-    background: $color-brown;
-    height: 0.2rem;
-    content: "";
-    width: 16%;
-    right: 43%;
-    bottom: 25%;
-  }
+  // &__heading-main::after {
+  //   position: absolute;
+  //   background: $color-brown;
+  //   height: 0.2rem;
+  //   content: "";
+  //   width: 16%;
+  //   right: 43%;
+  //   bottom: 25%;
+  // }
 
   &__icon-header {
     height: 3.5rem;
     width: 3.5rem;
     position: absolute;
     right: 49%;
-    bottom: 65%;
+    bottom: 100%;
     fill: $color-brown;
     margin-bottom: 0.2rem;
   }
@@ -59,6 +60,7 @@
   &__card-box {
     display: flex;
     justify-content: space-between;
+    margin-top: 5rem;
   }
 
   &__card {
