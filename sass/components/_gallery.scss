@@ -1,96 +1,6 @@
 .gallery {
   @include heading-top(0, 0, 11%, 14%, 43%);
-  // &__heading-main {
-  //   text-align: center;
-  //   padding: 4rem 0 3rem 0;
-  //   font-size: 3.5rem;
-  //   font-weight: 500;
-  //   position: relative;
-  //   background-color: $color-white;
-  // }
-
-  // &__heading-main::before {
-  //   position: absolute;
-  //   background: $color-brown;
-  //   height: 0.2rem;
-  //   content: "";
-  //   width: 11%;
-  // }
-
-  // &__heading-main::after {
-  //   position: absolute;
-  //   background: $color-brown;
-  //   height: 0.2rem;
-  //   content: "";
-  //   width: 14%;
-  //   right: 43%;
-  //   bottom: 25%;
-  // }
-
-  &__icon-header {
-    height: 3.5rem;
-    width: 3.5rem;
-    position: absolute;
-    right: 49%;
-    bottom: 100%;
-    fill: $color-brown;
-    margin-bottom: 0.2rem;
-  }
-
-  &__icon-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__icon-card {
-    margin: 2rem 0 5rem 0;
-    display: flex;
-  }
-
-  &__icon-card-left {
-    display: flex;
-    align-items: flex-start;
-    margin-right: 3rem;
-    padding: 1rem;
-  }
-  &__icon-card-right {
-    display: flex;
-    align-items: flex-start;
-    padding: 1rem 5rem 1rem 1rem;
-    margin-left: 3rem;
-  }
-
-  &__link {
-    text-decoration: none;
-    font-size: 1.3rem;
-  }
-
-  &__text-face {
-    font-size: 1.5rem;
-    color: $color-face;
-    margin-bottom: 0.5rem;
-  }
-
-  &__text-insta {
-    font-size: 1.5rem;
-    color: $color-insta;
-    margin-bottom: 0.5rem;
-  }
-
-  &__icon-face {
-    height: 2.5rem;
-    width: 2.5rem;
-    fill: $color-face;
-    margin-right: 1.5rem;
-  }
-
-  &__icon-insta {
-    height: 2.5rem;
-    width: 2.5rem;
-    fill: $color-insta;
-    margin-right: 1.5rem;
-  }
+  @include icon;
 
   &__grid {
     columns: 5 20rem;
@@ -121,11 +31,19 @@
     border-radius: 0.5rem;
     transition: all 0.25s ease-in-out;
   }
-  &__text {
+
+  &__text-grid {
     margin: 0.5rem 0;
     padding: 0;
     text-align: center;
     font-style: italic;
+  }
+
+  &__icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &__text-big {
@@ -133,6 +51,55 @@
     text-align: center;
     letter-spacing: 0.2rem;
     font-style: italic;
-    margin-top: 3rem;
+    margin-top: 6rem;
+  }
+
+  &__icon-card {
+    margin: 4rem 0 8rem 0;
+    display: flex;
+  }
+
+  &__icon-card-left {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 3rem;
+    padding: 1rem;
+  }
+  &__icon-card-right {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem 5rem 1rem 1rem;
+    margin-left: 3rem;
+  }
+
+  &__text-face {
+    font-size: 1.5rem;
+    color: $color-face;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text-insta {
+    font-size: 1.5rem;
+    color: $color-insta;
+    margin-bottom: 0.5rem;
+  }
+
+  &__icon-face {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-face;
+    margin-right: 1.5rem;
+  }
+
+  &__icon-insta {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-insta;
+    margin-right: 1.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.3rem;
   }
 }

@@ -27,6 +27,18 @@
   }
 }
 
+@mixin icon {
+  &__icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    right: 49%;
+    bottom: 100%;
+    fill: $color-brown;
+    margin-bottom: 0.2rem;
+  }
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint == small-phone {
     @media only screen and (max-width: 20em) {

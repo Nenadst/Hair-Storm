@@ -28,13 +28,28 @@
       border-bottom: 3px solid $color-brown;
     }
 
-    &--msg {
-      height: 17rem;
-      display: inline-block;
+    &::-webkit-input-placeholder {
+      color: $color-white;
     }
+  }
+
+  &__input-msg {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: $color-white;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    background-color: $color-gray;
+    border: none;
+    width: 80%;
+    display: block;
+    border-bottom: 3px solid transparent;
+    height: 17rem;
+    display: inline-block;
 
     &::-webkit-input-placeholder {
       color: $color-white;
+      font-family: "Montserrat", sans-serif;
     }
   }
 }

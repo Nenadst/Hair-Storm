@@ -35,6 +35,10 @@
     position: absolute;
     bottom: 5rem;
     left: 20rem;
+
+    @include respond(big-screen) {
+      left: 10rem;
+    }
   }
 
   &__text-box {
@@ -46,6 +50,10 @@
   &__text {
     color: $color-brown;
     font-size: 2rem;
+
+    @include respond(big-screen) {
+      font-size: 1.8rem;
+    }
   }
 
   &__icon {
@@ -54,11 +62,19 @@
     fill: $color-brown;
     margin-left: 2rem;
     margin-bottom: -0.5rem;
+
+    @include respond(big-screen) {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
   }
 
   &__phone {
     color: $color-brown;
     text-decoration: none;
+    @include respond(big-screen) {
+      font-size: 1.7rem;
+    }
   }
 
   &__box {

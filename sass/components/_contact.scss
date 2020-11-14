@@ -1,61 +1,6 @@
 .contact {
   @include heading-top(0, 0, 11.5%, 14%, 43%);
-  // &__heading-main {
-  //   text-align: center;
-  //   padding: 4rem 0 3rem 0;
-  //   margin-bottom: 5rem;
-  //   font-size: 3.5rem;
-  //   font-weight: 500;
-  //   position: relative;
-  //   background-color: $color-white;
-  // }
-
-  // &__heading-main::before {
-  //   position: absolute;
-  //   background: $color-brown;
-  //   height: 0.2rem;
-  //   content: "";
-  //   width: 11.5%;
-  // }
-
-  // &__heading-main::after {
-  //   position: absolute;
-  //   background: $color-brown;
-  //   height: 0.2rem;
-  //   content: "";
-  //   width: 16%;
-  //   right: 43%;
-  //   bottom: 25%;
-  // }
-
-  &__icon-header {
-    height: 3.5rem;
-    width: 3.5rem;
-    position: absolute;
-    right: 49%;
-    bottom: 100%;
-    fill: $color-brown;
-    margin-bottom: 0.2rem;
-  }
-
-  &__adress {
-    flex-basis: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__img {
-    width: 80%;
-  }
-
-  &__form {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5rem;
-    border: 0.5rem double $color-black;
-    padding: 3rem 0;
-  }
+  @include icon;
 
   &__card-box {
     display: flex;
@@ -69,6 +14,10 @@
     background-color: $color-black;
     color: $color-white;
     padding: 3rem 2rem;
+
+    @include respond(big-screen) {
+      padding: 2rem 1rem;
+    }
   }
 
   &__icon-box {
@@ -79,14 +28,14 @@
     padding: 1rem 1rem;
   }
 
-  &__icon {
+  &__text-box {
+    margin-left: 1rem;
+  }
+
+  &__icon-card {
     height: 2rem;
     width: 2rem;
     fill: $color-white;
-  }
-
-  &__text-box {
-    margin-left: 1rem;
   }
 
   &__text {
@@ -103,6 +52,13 @@
     font-size: 1.3rem;
   }
 
+  &__adress {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__phone {
     text-decoration: none;
     color: $color-white;
@@ -111,5 +67,13 @@
   &__email {
     text-decoration: none;
     color: $color-white;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    border: 0.5rem double $color-black;
+    padding: 3rem 0;
   }
 }

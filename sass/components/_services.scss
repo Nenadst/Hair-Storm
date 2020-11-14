@@ -1,42 +1,6 @@
 .services {
-  @include heading-top(0, -7rem, 10%, 12%, 44%);
-  // &__heading-main {
-  //   text-align: center;
-  //   padding-top: 4rem;
-  //   padding-bottom: 3rem;
-  //   font-size: 3.5rem;
-  //   font-weight: 500;
-  //   position: relative;
-  //   background-color: $color-white;
-  // }
-
-  // &__heading-main::before {
-  //   position: absolute;
-  //   background: $color-brown;
-  //   height: 0.2rem;
-  //   content: "";
-  //   width: 10%;
-  // }
-
-  // &__heading-main::after {
-  //   position: absolute;
-  //   background: $color-brown;
-  //   height: 0.2rem;
-  //   content: "";
-  //   width: 12%;
-  //   right: 44%;
-  //   bottom: 25%;
-  // }
-
-  &__icon {
-    height: 3.5rem;
-    width: 3.5rem;
-    position: absolute;
-    right: 49%;
-    bottom: 100%;
-    fill: $color-brown;
-    margin-bottom: 0.2rem;
-  }
+  @include heading-top(0, -8rem, 10%, 12%, 44%);
+  @include icon;
 
   &__container {
     display: flex;
@@ -48,31 +12,11 @@
     margin-top: 5rem;
     display: flex;
     width: 50%;
-  }
 
-  &__text-box {
-    padding: 2rem;
-  }
-
-  &__heading-sub {
-    margin-top: 3rem;
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-  }
-
-  &__text {
-    margin: 3rem 0;
-    font-size: 1.3rem;
-    line-height: 1.5;
-  }
-
-  &__img-box {
-    // height: 25rem;
-  }
-
-  &__img {
-    display: block;
-    height: 100%;
+    @include respond(big-screen) {
+      width: 45%;
+      margin-left: 5%;
+    }
   }
 
   &__box--2 {
@@ -80,12 +24,22 @@
     display: flex;
     width: 50%;
     align-self: flex-end;
+
+    @include respond(big-screen) {
+      width: 45%;
+      margin-right: 5%;
+    }
   }
 
   &__box--3 {
     background-color: rgba($color-white, 0.8);
     display: flex;
     width: 50%;
+
+    @include respond(big-screen) {
+      width: 45%;
+      margin-left: 5%;
+    }
   }
 
   &__box--4 {
@@ -94,6 +48,51 @@
     width: 50%;
     align-self: flex-end;
     margin-bottom: 5rem;
+
+    @include respond(big-screen) {
+      width: 45%;
+      margin-right: 5%;
+    }
+  }
+
+  &__text-box {
+    padding: 2rem;
+
+    @include respond(big-screen) {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  &__heading-card {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+
+    @include respond(big-screen) {
+      margin: 0;
+    }
+  }
+
+  &__text {
+    margin: 3rem 0;
+    font-size: 1.3rem;
+    line-height: 1.5;
+
+    @include respond(big-screen) {
+      margin: 0;
+    }
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+    @include respond(big-screen) {
+      height: 22rem;
+      width: auto;
+    }
   }
 
   &__card-icon {
