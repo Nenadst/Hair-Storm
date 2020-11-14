@@ -11,6 +11,9 @@
 
   &__list {
     text-align: center;
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__link:link,
@@ -31,6 +34,10 @@
   &__item {
     display: inline-block;
     font-size: 1.6rem;
+
+    @include respond(tab-land) {
+      font-size: 1.4rem;
+    }
   }
 
   &__icon-link:link,
@@ -51,5 +58,15 @@
   &__icon {
     height: 2rem;
     width: 2rem;
+
+    @include respond(tab-land) {
+      height: 1.7rem;
+      width: 1.7rem;
+    }
+
+    @include respond(phone) {
+      height: 2rem;
+      width: 2rem;
+    }
   }
 }

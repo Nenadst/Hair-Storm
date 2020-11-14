@@ -9,6 +9,10 @@
   &__box {
     display: flex;
     justify-content: space-between;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -17,10 +21,13 @@
     overflow: hidden;
     padding: 2rem;
 
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+
     &--left {
       display: flex;
       flex-direction: column;
-      flex-shrink: 0;
     }
 
     &--center {
@@ -51,7 +58,7 @@
     margin-bottom: 2rem;
 
     @include respond(tab-land) {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
   }
 

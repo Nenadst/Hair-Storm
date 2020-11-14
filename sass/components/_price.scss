@@ -7,12 +7,30 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 3rem;
+
+    @include respond(tab-land) {
+      margin-top: 2rem;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__card {
     border: 5px double $color-white;
-    padding: 5rem 5rem;
+    padding: 5rem;
     flex-basis: 30%;
+
+    @include respond(tab-land) {
+      flex-basis: 32%;
+      padding: 4rem;
+    }
+
+    @include respond(phone) {
+      width: 80%;
+      margin-bottom: 3rem;
+    }
 
     &--left {
       background-color: rgba($color-brown, 0.8);
@@ -37,6 +55,10 @@
     font-size: 1.5rem;
     border-bottom: 1px dotted $color-white;
     padding-top: 2rem;
+
+    @include respond(tab-land) {
+      font-size: 1.4rem;
+    }
   }
 
   &__btn-box {

@@ -8,6 +8,16 @@
   &__heading {
     font-size: 2rem;
     margin-bottom: 2rem;
+    text-align: center;
+
+    @include respond(tab-land) {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
   }
 
   &__input {
@@ -21,6 +31,15 @@
     width: 80%;
     display: block;
     border-bottom: 3px solid transparent;
+
+    @include respond(tab-land) {
+      margin-top: 1.5rem;
+      width: 70%;
+    }
+
+    @include respond(tab-port) {
+      width: 50%;
+    }
 
     &:focus {
       outline: none;
@@ -46,6 +65,14 @@
     border-bottom: 3px solid transparent;
     height: 17rem;
     display: inline-block;
+
+    @include respond(tab-land) {
+      width: 70%;
+    }
+
+    @include respond(tab-port) {
+      width: 50%;
+    }
 
     &::-webkit-input-placeholder {
       color: $color-white;

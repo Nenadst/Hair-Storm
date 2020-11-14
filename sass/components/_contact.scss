@@ -6,6 +6,15 @@
     display: flex;
     justify-content: space-between;
     margin-top: 5rem;
+
+    @include respond(tab-port) {
+      justify-content: space-around;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__card {
@@ -16,7 +25,13 @@
     padding: 3rem 2rem;
 
     @include respond(big-screen) {
-      padding: 2rem 1rem;
+      padding: 1rem 1rem;
+      align-items: center;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+      width: 70%;
     }
   }
 
@@ -41,22 +56,23 @@
   &__text {
     display: flex;
     flex-direction: column;
+
+    @include respond(tab-land) {
+      justify-content: center;
+    }
   }
 
   &__text-bold {
     font-size: 1.3rem;
     padding-bottom: 1rem;
+
+    @include respond(tab-land) {
+      padding-bottom: 0.5rem;
+    }
   }
 
   &__text-thin {
     font-size: 1.3rem;
-  }
-
-  &__adress {
-    flex-basis: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   &__phone {
@@ -75,5 +91,21 @@
     margin-top: 5rem;
     border: 0.5rem double $color-black;
     padding: 3rem 0;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      padding: 5rem;
+    }
+  }
+
+  &__map {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tab-port) {
+      margin-bottom: 5rem;
+    }
   }
 }

@@ -17,6 +17,16 @@
       width: 45%;
       margin-left: 5%;
     }
+
+    @include respond(tab-land) {
+      margin-top: 1rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 3rem;
+    }
   }
 
   &__box--2 {
@@ -29,6 +39,12 @@
       width: 45%;
       margin-right: 5%;
     }
+
+    @include respond(phone) {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 3rem;
+    }
   }
 
   &__box--3 {
@@ -39,6 +55,12 @@
     @include respond(big-screen) {
       width: 45%;
       margin-left: 5%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 3rem;
     }
   }
 
@@ -52,6 +74,16 @@
     @include respond(big-screen) {
       width: 45%;
       margin-right: 5%;
+    }
+
+    @include respond(tab-land) {
+      margin-bottom: 4rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 3rem;
     }
   }
 
@@ -74,6 +106,10 @@
     @include respond(big-screen) {
       margin: 0;
     }
+
+    @include respond(tab-land) {
+      font-size: 1.7rem;
+    }
   }
 
   &__text {
@@ -83,6 +119,10 @@
 
     @include respond(big-screen) {
       margin: 0;
+    }
+
+    @include respond(tab-land) {
+      font-size: 1.1rem;
     }
   }
 
