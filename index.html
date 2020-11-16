@@ -20,7 +20,6 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
       <div class="header__container">
         <nav class="nav">
           <div class="header__logo-box">
@@ -60,20 +59,15 @@
           <span class="heading-secondary--white">dobrodosli u</span>
           <span class="heading-secondary--brown">studio lepote</span>  
           </h2>
-        </div>
-      </div>
-        
+        </div>       
         <div class="header__bottom">
           <div class="header__text-box">
             <p class="header__text">
               Kontaktirajte nas
-              <a href="+38164691714029">
+              <a href="+38164691714029" target="_blank" class="header__link">
                 <svg class="header__icon">
                   <use xlink:href="img/sprite.svg#icon-mobile"></use></svg
-              ></a>
-              <a href="+38164691714029" class="header__phone"
-                >+ 381 64 69 1714 029</a
-              >
+              ><span class="header__phone">+ 381 64 69 1714 029</span></a>
             </p>
           </div>
     </header>
@@ -98,7 +92,7 @@
               Maecenas non commodo libero. Suspendisse sit amet arcu augue
               efficitur luctus a nec ipsum dolor sit amet.
             </p>
-            <a href="#" class=" btn-text"
+            <a href="#" class=" btn-text btn-text--brown"
               >Pročitajte više
               <svg class="about__text-icon">
                 <use xlink:href="img/sprite.svg#icon-cut"></use>
@@ -133,9 +127,9 @@
               <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Vero enim vitae cum perferendis nostrum? Ducimus, provident. 
                 Repudiandae eveniet recusandae, commodi fugit, labore deserunt nulla non esse quae...</p>
-                <a href="#popup" class="btn-text"
+                <a href="#popup" class="btn-text btn-text--brown"
               >Pročitajte više
-              <svg class="services__card-icon">
+              <svg class="services__card-icon services__card-icon--brown"">
                 <use xlink:href="img/sprite.svg#icon-cut"></use>
               </svg>
             </a>
@@ -155,9 +149,8 @@
               <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Vero enim vitae cum perferendis nostrum? Ducimus, provident. 
                 Repudiandae eveniet recusandae, commodi fugit, labore deserunt nulla non esse quae...</p>
-                <a href="#popup" class="btn-text"
-              >Pročitajte više
-              <svg class="services__card-icon">
+                <a href="#popup" class="btn-text btn-text--white">Pročitajte više
+              <svg class="services__card-icon services__card-icon--white"">
                 <use xlink:href="img/sprite.svg#icon-cut"></use>
               </svg>
             </a>
@@ -171,9 +164,8 @@
               <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Vero enim vitae cum perferendis nostrum? Ducimus, provident. 
                 Repudiandae eveniet recusandae, commodi fugit, labore deserunt nulla non esse quae...</p>
-                <a href="#popup" class="btn-text"
-              >Pročitajte više
-              <svg class="services__card-icon">
+                <a href="#popup" class="btn-text btn-text--brown">Pročitajte više
+              <svg class="services__card-icon services__card-icon--brown"">
                 <use xlink:href="img/sprite.svg#icon-cut"></use>
               </svg>
             </a>
@@ -193,9 +185,8 @@
               <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Vero enim vitae cum perferendis nostrum? Ducimus, provident. 
                 Repudiandae eveniet recusandae, commodi fugit, labore deserunt nulla non esse quae...</p>
-                <a href="#popup" class="btn-text"
-              >Pročitajte više
-              <svg class="services__card-icon">
+                <a href="#popup" class="btn-text btn-text--white">Pročitajte više
+              <svg class="services__card-icon services__card-icon--white">
                 <use xlink:href="img/sprite.svg#icon-cut"></use>
               </svg>
             </a>
@@ -330,7 +321,7 @@
               <p class="price__item">600,00 - 1500,00 rsd</p>
             </div>
             <div class="price__btn-box">
-              <a href="#" class="btn__price btn__price--orange">Pogledajte kompletan cenovnik</a>
+              <a href="#" class="btn__price btn__price--brown">Pogledajte kompletan cenovnik</a>
           </div>
         </div>
       </div>
@@ -412,12 +403,12 @@
     <footer class="footer"></footer>
     <div class="popup" id="popup">
       <div class="popup__content">
-        <div class="popup__left">
+        <div class="popup__image-box">
           <img src="img/s1.jpg" alt="Slika" class="popup__img">
         </div>
-        <div class="popup__right">
+        <div class="popup__text-box">
           <a href="#section-services" class="popup__close">&times;</a>
-          <h3 class="services__heading-sub">
+          <h3 class="popup__heading">
             Sve vrste ženskih frizura
           </h3>
           <p class="popup__text">
