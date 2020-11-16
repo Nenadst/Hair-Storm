@@ -41,6 +41,10 @@
       width: 50%;
     }
 
+    @include respond(phone) {
+      width: 70%;
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 0.5rem rgba($color-black, 0.1);
@@ -72,6 +76,10 @@
 
     @include respond(tab-port) {
       width: 50%;
+    }
+
+    @include respond(phone) {
+      width: 70%;
     }
 
     &::-webkit-input-placeholder {

@@ -57,6 +57,10 @@
   &__icon-card {
     margin: 4rem 0 8rem 0;
     display: flex;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__icon-card-left {
@@ -70,6 +74,10 @@
     align-items: flex-start;
     padding: 1rem 5rem 1rem 1rem;
     margin-left: 3rem;
+
+    @include respond(phone) {
+      margin: 2rem 0 0 0;
+    }
   }
 
   &__text-face {

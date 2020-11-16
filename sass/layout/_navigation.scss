@@ -9,6 +9,10 @@
   font-weight: 600;
   padding: 1rem 0;
 
+  @include respond(phone) {
+    justify-content: space-around;
+  }
+
   &__list {
     text-align: center;
     @include respond(phone) {
@@ -48,7 +52,7 @@
 
   &__icon-link:hover,
   &__icon-link:active {
-    fill: darken($color-brown, 25%);
+    fill: ($color-face);
   }
 
   &__icon-link:not(:last-child) {
@@ -67,6 +71,10 @@
     @include respond(phone) {
       height: 2rem;
       width: 2rem;
+    }
+
+    &:hover {
+      transform: scale(1.3);
     }
   }
 }

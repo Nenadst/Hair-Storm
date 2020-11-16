@@ -20,20 +20,62 @@
     opacity: 0;
     border-radius: 0.3rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
     transition: all 0.4s;
+
+    @include respond(phone) {
+      flex-direction: column;
+      width: 60%;
+    }
   }
 
-  &__right {
-    padding: 1rem 5rem 3rem 5rem;
-    display: flex;
-    flex-direction: column;
+  &__image-box {
+    flex-basis: 33%;
+    height: 100%;
+
+    @include respond(phone) {
+      height: 20rem;
+      width: auto;
+    }
   }
 
-  &__image {
+  &__img {
     display: block;
     height: 100%;
+    width: 100%;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-basis: 60%;
+
+    @include respond(big-screen) {
+      margin-right: 1rem;
+      flex-basis: 63%;
+    }
+
+    @include respond(phone) {
+      margin: 0 0.5rem;
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+    margin: 2rem 0;
+
+    @include respond(big-screen) {
+      font-size: 1.8rem;
+      margin: 0.4rem 0;
+    }
+
+    @include respond(tab-land) {
+      font-size: 1.7rem;
+    }
   }
 
   &__text {
@@ -43,8 +85,20 @@
     column-count: 2;
     column-gap: 4rem;
     column-rule: 0.1rem solid rgba($color-black, $alpha: 0.3);
-
     hyphens: auto;
+
+    @include respond(big-screen) {
+      margin: 2rem 0.5rem 2rem 0;
+    }
+
+    @include respond(tab-land) {
+      margin: 1.4rem 0.5rem 1rem 0;
+      font-size: 1.2rem;
+    }
+
+    @include respond(phone) {
+      column-count: unset;
+    }
   }
 
   &:target {
@@ -60,6 +114,7 @@
 
   &__close {
     align-self: flex-end;
+    margin-right: 2.5rem;
     &:link,
     &:visited {
       color: $color-black;
