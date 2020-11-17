@@ -16,7 +16,8 @@
     margin: 5rem auto 0 auto;
 
     @include respond(phone) {
-      width: 80%;
+      width: 65%;
+      columns: 25rem;
     }
   }
   &__image-box {
