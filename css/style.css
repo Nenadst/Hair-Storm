@@ -131,7 +131,7 @@ body {
   padding: 2rem; }
   @media only screen and (max-width: 48em) {
     .about__card {
-      padding-top: 0; } }
+      margin-bottom: 2rem; } }
   .about__card--left {
     display: flex;
     flex-direction: column;
@@ -174,13 +174,18 @@ body {
   font-size: 1.5rem;
   line-height: 1.3;
   letter-spacing: 0.2rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  text-align: justify; }
   @media only screen and (max-width: 75em) {
     .about__text {
       font-size: 1.3rem; } }
   @media only screen and (max-width: 48em) {
     .about__text {
-      font-size: 1.4rem; } }
+      font-size: 1.4rem;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto; } }
 
 .about__text-icon {
   height: 1.5rem;
@@ -203,6 +208,10 @@ body {
     .about__heading-card {
       font-size: 3rem;
       padding: 9.5rem 2rem; } }
+  @media only screen and (max-width: 48em) {
+    .about__heading-card {
+      padding: 12rem 1rem;
+      letter-spacing: 1rem; } }
 
 .about__heading-card:hover {
   text-transform: uppercase;
@@ -221,9 +230,6 @@ body {
   font-size: 1.3rem;
   font-weight: 600;
   display: flex; }
-  @media only screen and (max-width: 48em) {
-    .btn-text {
-      font-size: 1rem; } }
   .btn-text--brown:link, .btn-text--brown:visited {
     color: sandybrown;
     padding: 1rem 1rem;
@@ -246,10 +252,11 @@ body {
     transform: translate(-1rem, -0.2rem); }
   .btn-text--white:active {
     transform: translateY(0); }
+  .btn-text--brown:hover .about__text-icon {
+    fill: #fff; }
   .btn-text--brown:hover .services__card-icon--brown {
     fill: #fff; }
-  .btn-text--white:hover .services__card-icon--white,
-  .btn-text .about__text-icon {
+  .btn-text--white:hover .services__card-icon--white {
     fill: sandybrown; }
 
 .btn__price {
@@ -631,6 +638,9 @@ body {
   column-gap: 5rem;
   width: 80%;
   margin: 5rem auto 0 auto; }
+  @media only screen and (max-width: 48em) {
+    .gallery__grid {
+      width: 60%; } }
 
 .gallery__image-box {
   margin: 0 1.5rem 1.5rem 0;
@@ -1268,6 +1278,9 @@ body {
 
 .section-gallery {
   padding: 5rem 0; }
+  @media only screen and (max-width: 48em) {
+    .section-gallery {
+      padding: 5rem 10rem; } }
 
 .section-price {
   background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(..//img/p1.jpg);
