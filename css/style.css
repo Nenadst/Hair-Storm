@@ -80,7 +80,10 @@ body {
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 14%; }
+  width: 13%; }
+  @media only screen and (max-width: 75em) {
+    .about__heading::before {
+      display: none; } }
 
 .about__heading::after {
   position: absolute;
@@ -88,8 +91,11 @@ body {
   height: 0.2rem;
   content: "";
   width: 17%;
-  right: 41.5%;
+  right: 42.5%;
   bottom: 0%; }
+  @media only screen and (max-width: 75em) {
+    .about__heading::after {
+      display: none; } }
 
 .about__icon {
   height: 3.5rem;
@@ -102,6 +108,11 @@ body {
 
 .about__heading-box {
   margin-bottom: 5rem; }
+
+@media only screen and (max-width: 75em) {
+  .about__heading-main {
+    border-top: 0.3rem solid sandybrown;
+    border-bottom: 0.3rem solid sandybrown; } }
 
 .about__box {
   display: flex;
@@ -222,10 +233,10 @@ body {
     transform: translate(-1rem, -0.2rem); }
   .btn-text--white:active {
     transform: translateY(0); }
-  .btn-text--brown:hover .services__card-icon--brown,
-  .btn-text .about__text-icon {
+  .btn-text--brown:hover .services__card-icon--brown {
     fill: #fff; }
-  .btn-text--white:hover .services__card-icon--white {
+  .btn-text--white:hover .services__card-icon--white,
+  .btn-text .about__text-icon {
     fill: sandybrown; }
 
 .btn__price {
@@ -370,16 +381,22 @@ body {
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 11.5%; }
+  width: 13.5%; }
+  @media only screen and (max-width: 75em) {
+    .contact__heading::before {
+      display: none; } }
 
 .contact__heading::after {
   position: absolute;
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 14%;
-  right: 43%;
+  width: 16%;
+  right: 42%;
   bottom: 0%; }
+  @media only screen and (max-width: 75em) {
+    .contact__heading::after {
+      display: none; } }
 
 .contact__icon {
   height: 3.5rem;
@@ -389,6 +406,11 @@ body {
   bottom: 100%;
   fill: sandybrown;
   margin-bottom: 0.2rem; }
+
+@media only screen and (max-width: 75em) {
+  .contact__heading-main {
+    border-top: 0.3rem solid sandybrown;
+    border-bottom: 0.3rem solid sandybrown; } }
 
 .contact__card-box {
   display: flex;
@@ -560,16 +582,22 @@ body {
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 11%; }
+  width: 10.5%; }
+  @media only screen and (max-width: 75em) {
+    .gallery__heading::before {
+      display: none; } }
 
 .gallery__heading::after {
   position: absolute;
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 14%;
-  right: 43%;
+  width: 13%;
+  right: 43.7%;
   bottom: 0%; }
+  @media only screen and (max-width: 75em) {
+    .gallery__heading::after {
+      display: none; } }
 
 .gallery__icon {
   height: 3.5rem;
@@ -579,6 +607,11 @@ body {
   bottom: 100%;
   fill: sandybrown;
   margin-bottom: 0.2rem; }
+
+@media only screen and (max-width: 75em) {
+  .gallery__heading-main {
+    border-top: 0.3rem solid sandybrown;
+    border-bottom: 0.3rem solid sandybrown; } }
 
 .gallery__grid {
   columns: 5 20rem;
@@ -701,13 +734,13 @@ body {
     @media only screen and (max-width: 48em) {
       .popup__content {
         flex-direction: column;
-        width: 60%; } }
+        width: 35%; } }
   .popup__image-box {
     flex-basis: 33%;
     height: 100%; }
     @media only screen and (max-width: 48em) {
       .popup__image-box {
-        height: 20rem;
+        max-height: 43rem;
         width: auto; } }
   .popup__img {
     display: block;
@@ -725,7 +758,8 @@ body {
         flex-basis: 63%; } }
     @media only screen and (max-width: 48em) {
       .popup__text-box {
-        margin: 0 0.5rem; } }
+        margin: 0 0.5rem;
+        width: 90%; } }
   .popup__heading {
     font-size: 2rem;
     margin: 2rem 0; }
@@ -763,6 +797,9 @@ body {
   .popup__close {
     align-self: flex-end;
     margin-right: 2.5rem; }
+    @media only screen and (max-width: 48em) {
+      .popup__close {
+        margin-right: 1rem; } }
     .popup__close:link, .popup__close:visited {
       color: #000;
       font-size: 3rem;
@@ -785,16 +822,22 @@ body {
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 13%; }
+  width: 15.5%; }
+  @media only screen and (max-width: 75em) {
+    .price__heading::before {
+      display: none; } }
 
 .price__heading::after {
   position: absolute;
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 16%;
-  right: 42%;
+  width: 18%;
+  right: 41%;
   bottom: 0%; }
+  @media only screen and (max-width: 75em) {
+    .price__heading::after {
+      display: none; } }
 
 .price__icon {
   height: 3.5rem;
@@ -804,6 +847,11 @@ body {
   bottom: 100%;
   fill: sandybrown;
   margin-bottom: 0.2rem; }
+
+@media only screen and (max-width: 75em) {
+  .price__heading-main {
+    border-top: 0.3rem solid sandybrown;
+    border-bottom: 0.3rem solid sandybrown; } }
 
 .price__box {
   display: flex;
@@ -868,7 +916,10 @@ body {
   background: sandybrown;
   height: 0.2rem;
   content: "";
-  width: 10%; }
+  width: 9.5%; }
+  @media only screen and (max-width: 75em) {
+    .services__heading::before {
+      display: none; } }
 
 .services__heading::after {
   position: absolute;
@@ -876,8 +927,11 @@ body {
   height: 0.2rem;
   content: "";
   width: 12%;
-  right: 44%;
+  right: 44.5%;
   bottom: 0%; }
+  @media only screen and (max-width: 75em) {
+    .services__heading::after {
+      display: none; } }
 
 .services__icon {
   height: 3.5rem;
@@ -887,6 +941,11 @@ body {
   bottom: 100%;
   fill: sandybrown;
   margin-bottom: 0.2rem; }
+
+@media only screen and (max-width: 75em) {
+  .services__heading-main {
+    border-top: 0.3rem solid sandybrown;
+    border-bottom: 0.3rem solid sandybrown; } }
 
 .services__container {
   display: flex;
