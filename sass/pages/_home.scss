@@ -22,6 +22,10 @@
 
 .section-gallery {
   padding: 5rem 0;
+
+  @include respond(phone) {
+    padding: 5rem 10rem;
+  }
 }
 
 .section-price {
