@@ -210,7 +210,7 @@ body {
       padding: 9.5rem 2rem; } }
   @media only screen and (max-width: 48em) {
     .about__heading-card {
-      padding: 12rem 1rem;
+      padding: 10rem 1rem;
       letter-spacing: 1rem; } }
 
 .about__heading-card:hover {
@@ -219,7 +219,6 @@ body {
   font-size: 3.4rem;
   letter-spacing: 0.2rem;
   line-height: 1.8;
-  font-family: "Playfair Display", sans-serif;
   border: 3px solid #fff;
   padding: 8.5rem 0;
   background-color: rgba(0, 0, 0, 0.8);
