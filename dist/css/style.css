@@ -18,6 +18,21 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0); }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0); } }
+
 *,
 *::after,
 *::before {
@@ -461,6 +476,11 @@ body {
   transition: all 0.2s; }
   .contact__card:hover {
     transform: scale(1.2); }
+  .contact__card:hover .contact__icon-card {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px; }
   @media only screen and (max-width: 90em) {
     .contact__card {
       padding: 1rem 1rem;
@@ -526,21 +546,6 @@ body {
   @media only screen and (max-width: 56.25em) {
     .contact__map {
       margin-bottom: 5rem; } }
-
-@keyframes shake {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0); }
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0); }
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-4px, 0, 0); }
-  40%,
-  60% {
-    transform: translate3d(4px, 0, 0); } }
 
 .form {
   display: flex;
@@ -819,7 +824,8 @@ body {
     @media only screen and (max-width: 48em) {
       .popup__text-box {
         margin: 0 0.5rem;
-        width: 90%; } }
+        width: 90%;
+        align-items: center; } }
   .popup__heading {
     font-size: 2rem;
     margin: 2rem 0; }
