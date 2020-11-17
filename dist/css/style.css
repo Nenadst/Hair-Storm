@@ -108,6 +108,9 @@ body {
 
 .about__heading-box {
   margin-bottom: 5rem; }
+  @media only screen and (max-width: 48em) {
+    .about__heading-box {
+      margin-bottom: 2rem; } }
 
 @media only screen and (max-width: 75em) {
   .about__heading-main {
@@ -128,12 +131,15 @@ body {
   padding: 2rem; }
   @media only screen and (max-width: 48em) {
     .about__card {
-      margin-bottom: 3rem; } }
+      padding-top: 0; } }
   .about__card--left {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start; }
+    @media only screen and (max-width: 48em) {
+      .about__card--left {
+        align-items: center; } }
   .about__card--center {
     background-image: url(../img/muski.jpg);
     background-size: cover;
@@ -159,6 +165,10 @@ body {
   @media only screen and (max-width: 75em) {
     .about__heading-text {
       font-size: 2rem; } }
+  @media only screen and (max-width: 48em) {
+    .about__heading-text {
+      text-align: center;
+      font-size: 2.1; } }
 
 .about__text {
   font-size: 1.5rem;
@@ -168,6 +178,9 @@ body {
   @media only screen and (max-width: 75em) {
     .about__text {
       font-size: 1.3rem; } }
+  @media only screen and (max-width: 48em) {
+    .about__text {
+      font-size: 1.4rem; } }
 
 .about__text-icon {
   height: 1.5rem;

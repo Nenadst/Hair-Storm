@@ -4,6 +4,10 @@
 
   &__heading-box {
     margin-bottom: 5rem;
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__heading-main {
@@ -29,7 +33,7 @@
     padding: 2rem;
 
     @include respond(phone) {
-      margin-bottom: 3rem;
+      padding-top: 0;
     }
 
     &--left {
@@ -37,6 +41,10 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: flex-start;
+
+      @include respond(phone) {
+        align-items: center;
+      }
     }
 
     &--center {
@@ -69,6 +77,11 @@
     @include respond(tab-land) {
       font-size: 2rem;
     }
+
+    @include respond(phone) {
+      text-align: center;
+      font-size: 2.1;
+    }
   }
 
   &__text {
@@ -79,6 +92,10 @@
 
     @include respond(tab-land) {
       font-size: 1.3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.4rem;
     }
   }
 
