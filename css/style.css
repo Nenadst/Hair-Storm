@@ -640,7 +640,7 @@ body {
   margin: 5rem auto 0 auto; }
   @media only screen and (max-width: 48em) {
     .gallery__grid {
-      width: 72%; } }
+      width: 80%; } }
 
 .gallery__image-box {
   margin: 0 1.5rem 1.5rem 0;
