@@ -130,7 +130,7 @@
     }
 
     @include respond(phone) {
-      padding: 12rem 1rem;
+      padding: 10rem 1rem;
       letter-spacing: 1rem;
     }
   }
@@ -141,7 +141,6 @@
     font-size: 3.4rem;
     letter-spacing: 0.2rem;
     line-height: 1.8;
-    font-family: "Playfair Display", sans-serif;
     border: 3px solid $color-white;
     padding: 8.5rem 0;
     background-color: rgba($color-black, 0.8);
