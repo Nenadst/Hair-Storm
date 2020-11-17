@@ -16,7 +16,7 @@
     margin: 5rem auto 0 auto;
 
     @include respond(phone) {
-      width: 60%;
+      width: 72%;
     }
   }
   &__image-box {
@@ -41,6 +41,10 @@
     filter: grayscale(100%);
     border-radius: 0.5rem;
     transition: all 0.25s ease-in-out;
+
+    @include respond(tab-port) {
+      filter: grayscale(0);
+    }
   }
 
   &__text-grid {
