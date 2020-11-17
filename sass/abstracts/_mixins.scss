@@ -14,6 +14,10 @@
     height: 0.2rem;
     content: "";
     width: $width-before;
+
+    @include respond(tab-land) {
+      display: none;
+    }
   }
 
   &__heading::after {
@@ -24,6 +28,10 @@
     width: $width-after;
     right: $right-after;
     bottom: 0%;
+
+    @include respond(tab-land) {
+      display: none;
+    }
   }
 }
 

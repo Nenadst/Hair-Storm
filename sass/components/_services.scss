@@ -1,6 +1,13 @@
 .services {
-  @include heading-top(0, -8rem, 10%, 12%, 44%);
+  @include heading-top(0, -8rem, 9.5%, 12%, 44.5%);
   @include icon;
+
+  &__heading-main {
+    @include respond(tab-land) {
+      border-top: 0.3rem solid $color-brown;
+      border-bottom: 0.3rem solid $color-brown;
+    }
+  }
 
   &__container {
     display: flex;

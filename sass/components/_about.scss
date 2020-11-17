@@ -1,9 +1,16 @@
 .about {
-  @include heading-top(7.5rem, 0, 14%, 17%, 41.5%);
+  @include heading-top(7.5rem, 0, 13%, 17%, 42.5%);
   @include icon;
 
   &__heading-box {
     margin-bottom: 5rem;
+  }
+
+  &__heading-main {
+    @include respond(tab-land) {
+      border-top: 0.3rem solid $color-brown;
+      border-bottom: 0.3rem solid $color-brown;
+    }
   }
 
   &__box {

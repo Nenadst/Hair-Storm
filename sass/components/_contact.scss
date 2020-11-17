@@ -1,6 +1,13 @@
 .contact {
-  @include heading-top(0, 0, 11.5%, 14%, 43%);
+  @include heading-top(0, 0, 13.5%, 16%, 42%);
   @include icon;
+
+  &__heading-main {
+    @include respond(tab-land) {
+      border-top: 0.3rem solid $color-brown;
+      border-bottom: 0.3rem solid $color-brown;
+    }
+  }
 
   &__card-box {
     display: flex;

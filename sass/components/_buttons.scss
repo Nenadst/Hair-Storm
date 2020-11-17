@@ -44,12 +44,12 @@
     transform: translateY(0);
   }
 
-  &--brown:hover .services__card-icon--brown,
-  .about__text-icon {
+  &--brown:hover .services__card-icon--brown {
     fill: $color-white;
   }
 
-  &--white:hover .services__card-icon--white {
+  &--white:hover .services__card-icon--white,
+  .about__text-icon {
     fill: $color-brown;
   }
 }

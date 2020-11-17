@@ -1,6 +1,13 @@
 .price {
-  @include heading-top(0, -10rem, 13%, 16%, 42%);
+  @include heading-top(0, -10rem, 15.5%, 18%, 41%);
   @include icon;
+
+  &__heading-main {
+    @include respond(tab-land) {
+      border-top: 0.3rem solid $color-brown;
+      border-bottom: 0.3rem solid $color-brown;
+    }
+  }
 
   &__box {
     display: flex;
