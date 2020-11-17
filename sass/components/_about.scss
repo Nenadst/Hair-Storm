@@ -145,5 +145,15 @@
     padding: 8.5rem 0;
     background-color: rgba($color-black, 0.8);
     cursor: pointer;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+      padding: 9.5rem 2rem;
+    }
+
+    @include respond(phone) {
+      padding: 10rem 1rem;
+      letter-spacing: 1rem;
+    }
   }
 }

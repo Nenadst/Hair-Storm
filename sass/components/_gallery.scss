@@ -83,16 +83,23 @@
     align-items: flex-start;
     margin-right: 3rem;
     padding: 1rem;
+    text-decoration: none;
   }
   &__icon-card-right {
     display: flex;
     align-items: flex-start;
     padding: 1rem 5rem 1rem 1rem;
     margin-left: 3rem;
+    text-decoration: none;
 
     @include respond(phone) {
       margin: 2rem 0 0 0;
     }
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
   }
 
   &__text-face {
@@ -108,21 +115,30 @@
   }
 
   &__icon-face {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     fill: $color-face;
     margin-right: 1.5rem;
+
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 
   &__icon-insta {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     fill: $color-insta;
     margin-right: 1.5rem;
+
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 
   &__link {
     text-decoration: none;
+    color: $color-face;
     font-size: 1.3rem;
   }
 }

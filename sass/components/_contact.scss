@@ -30,6 +30,12 @@
     background-color: $color-black;
     color: $color-white;
     padding: 3rem 2rem;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     @include respond(big-screen) {
       padding: 1rem 1rem;
@@ -58,6 +64,13 @@
     height: 2rem;
     width: 2rem;
     fill: $color-white;
+
+    &:hover {
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
   }
 
   &__text {
@@ -82,16 +95,6 @@
     font-size: 1.3rem;
   }
 
-  &__phone {
-    text-decoration: none;
-    color: $color-white;
-  }
-
-  &__email {
-    text-decoration: none;
-    color: $color-white;
-  }
-
   &__box {
     display: flex;
     justify-content: space-around;
@@ -114,5 +117,28 @@
     @include respond(tab-port) {
       margin-bottom: 5rem;
     }
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
   }
 }

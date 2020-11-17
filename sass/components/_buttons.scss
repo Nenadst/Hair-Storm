@@ -4,10 +4,6 @@
   font-weight: 600;
   display: flex;
 
-  // @include respond(phone) {
-  //   font-size: 1.1rem;
-  // }
-
   &--brown:link,
   &--brown:visited {
     color: $color-brown;
