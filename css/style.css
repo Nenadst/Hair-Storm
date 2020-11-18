@@ -260,7 +260,8 @@ body {
   .btn-text--brown:hover {
     color: #fff;
     background-color: sandybrown;
-    transform: translate(-1rem, -0.2rem); }
+    transform: translate(-1rem, -0.2rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn-text--brown:active {
     transform: translateY(0); }
   .btn-text--white:link, .btn-text--white:visited {
@@ -271,7 +272,8 @@ body {
   .btn-text--white:hover {
     color: sandybrown;
     background-color: #fff;
-    transform: translate(-1rem, -0.2rem); }
+    transform: translate(-1rem, -0.2rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn-text--white:active {
     transform: translateY(0); }
   .btn-text--brown:hover .about__text-icon {
@@ -475,7 +477,8 @@ body {
   text-decoration: none;
   transition: all 0.2s; }
   .contact__card:hover {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+    box-shadow: 0 0.2rem 1rem 0.5rem #b7a7a7; }
   .contact__card:hover .contact__icon-card {
     animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
     transform: translate3d(0, 0, 0);
@@ -1151,8 +1154,11 @@ body {
       max-width: 48rem; } }
 
 .footer {
-  height: 10vh;
   background-color: #b7a7a7; }
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .header {
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(..//img/112.jpg), url(../img/dott.pnt);
