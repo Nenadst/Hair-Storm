@@ -1,15 +1,66 @@
 .footer {
   background-color: $color-gray;
+  padding: 2rem 0;
 
   &__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    border-top: 5px solid rgba($color-white, $alpha: 0.5);
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__logo-box {
+    padding: 2rem;
+
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__logo {
+    height: 13rem;
+  }
+
+  &__copyright {
+    color: $color-white;
+    text-align: center;
+  }
+
+  &__navigation {
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 2rem;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 1.4rem;
+      font-weight: 500;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    &:hover,
+    &:active {
+      color: $color-brown;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: rotate(5deg) scale(1.3);
+    }
   }
 }
