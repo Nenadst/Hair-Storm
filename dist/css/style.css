@@ -836,6 +836,9 @@ body {
     @media only screen and (max-width: 75em) {
       .popup__heading {
         font-size: 1.7rem; } }
+    @media only screen and (max-width: 48em) {
+      .popup__heading {
+        text-align: center; } }
   .popup__text {
     font-size: 1.4rem;
     margin: 2rem 0 4rem 0;
@@ -852,7 +855,8 @@ body {
         font-size: 1.2rem; } }
     @media only screen and (max-width: 48em) {
       .popup__text {
-        column-count: unset; } }
+        column-count: unset;
+        text-align: center; } }
   .popup:target {
     opacity: 1;
     visibility: visible;

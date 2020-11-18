@@ -78,6 +78,10 @@
     @include respond(tab-land) {
       font-size: 1.7rem;
     }
+
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -100,6 +104,7 @@
 
     @include respond(phone) {
       column-count: unset;
+      text-align: center;
     }
   }
 
