@@ -16,6 +16,7 @@
     color: $color-white;
     background-color: $color-brown;
     transform: translate(-1rem, -0.2rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
 
   &--brown:active {
@@ -34,6 +35,7 @@
     color: $color-brown;
     background-color: $color-white;
     transform: translate(-1rem, -0.2rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
 
   &--white:active {

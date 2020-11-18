@@ -1,4 +1,15 @@
 .footer {
-  height: 10vh;
   background-color: $color-gray;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo-box {
+  }
+
+  &__logo {
+  }
 }

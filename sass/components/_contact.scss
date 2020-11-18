@@ -35,6 +35,7 @@
 
     &:hover {
       transform: scale(1.2);
+      box-shadow: 0 0.2rem 1rem 0.5rem $color-gray;
     }
 
     &:hover .contact__icon-card {
