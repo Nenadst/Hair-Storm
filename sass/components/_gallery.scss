@@ -14,10 +14,6 @@
     column-gap: 5rem;
     width: 80%;
     margin: 5rem auto 0 auto;
-
-    @include respond(phone) {
-      width: 80%;
-    }
   }
   &__image-box {
     margin: 0 1.5rem 1.5rem 0;
