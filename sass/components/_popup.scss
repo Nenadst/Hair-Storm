@@ -1,34 +1,34 @@
 .popup {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba($color-black, $alpha: 0.8);
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-
   &__content {
     width: 60%;
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, $alpha: 0.2);
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
+    transform: translate(-50%, -50%);
     border-radius: 0.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     transition: all 0.4s;
+    z-index: 10;
 
     @include respond(phone) {
       flex-direction: column;
       width: 35%;
     }
+  }
+
+  &__overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, $alpha: 0.8);
+    z-index: 5;
   }
 
   &__image-box {
@@ -108,36 +108,19 @@
     }
   }
 
-  &:target {
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s;
-  }
-
-  &:target &__content {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-
   &__close {
     align-self: flex-end;
     margin-right: 2.5rem;
+    font-size: 4rem;
+    text-decoration: none;
+    color: $color-black;
 
     @include respond(phone) {
       margin-right: 1rem;
     }
-
-    &:link,
-    &:visited {
-      color: $color-black;
-      font-size: 3rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 0.2s;
-    }
-
-    &:hover {
-      color: $color-brown;
-    }
   }
+}
+
+.hidden {
+  display: none;
 }
