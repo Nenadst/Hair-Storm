@@ -92,7 +92,7 @@
               Maecenas non commodo libero. Suspendisse sit amet arcu augue
               efficitur luctus a nec ipsum dolor sit amet ipsum dolor sit ame ipsum dolor sit.
             </p>
-            <a href="#" class=" btn-text btn-text--brown"
+            <a href="#about" class=" btn-text btn-text--brown"
               >Pročitajte više
               <svg class="about__text-icon">
                 <use xlink:href="img/sprite.svg#icon-cut"></use>
@@ -127,7 +127,7 @@
               <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Vero enim vitae cum perferendis nostrum? Ducimus, provident. 
                 Repudiandae eveniet recusandae, commodi fugit, labore deserunt nulla non esse quae...</p>
-                <a href="#popup" class="btn-text btn-text--brown"
+                <a href="#services" class="btn-text btn-text--brown"
               >Pročitajte više
               <svg class="services__card-icon services__card-icon--brown"">
                 <use xlink:href="img/sprite.svg#icon-cut"></use>
@@ -149,7 +149,7 @@
               <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Vero enim vitae cum perferendis nostrum? Ducimus, provident. 
                 Repudiandae eveniet recusandae, commodi fugit, labore deserunt nulla non esse quae...</p>
-                <a href="#popup" class="btn-text btn-text--white">Pročitajte više
+                <a href="#services" class="btn-text btn-text--white">Pročitajte više
               <svg class="services__card-icon services__card-icon--white"">
                 <use xlink:href="img/sprite.svg#icon-cut"></use>
               </svg>
@@ -164,7 +164,7 @@
               <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Vero enim vitae cum perferendis nostrum? Ducimus, provident. 
                 Repudiandae eveniet recusandae, commodi fugit, labore deserunt nulla non esse quae...</p>
-                <a href="#popup" class="btn-text btn-text--brown">Pročitajte više
+                <a href="#services" class="btn-text btn-text--brown">Pročitajte više
               <svg class="services__card-icon services__card-icon--brown"">
                 <use xlink:href="img/sprite.svg#icon-cut"></use>
               </svg>
@@ -185,7 +185,7 @@
               <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Vero enim vitae cum perferendis nostrum? Ducimus, provident. 
                 Repudiandae eveniet recusandae, commodi fugit, labore deserunt nulla non esse quae...</p>
-                <a href="#popup" class="btn-text btn-text--white">Pročitajte više
+                <a href="#services" class="btn-text btn-text--white">Pročitajte više
               <svg class="services__card-icon services__card-icon--white">
                 <use xlink:href="img/sprite.svg#icon-cut"></use>
               </svg>
@@ -423,13 +423,13 @@
       </div>
     </footer>
 
-    <div class="popup" id="popup">
-      <div class="popup__content">
+    <div class="popup hidden" >
+      <div class="popup__content ">
         <div class="popup__image-box">
           <img src="img/s1.jpg" alt="Slika" class="popup__img">
         </div>
         <div class="popup__text-box">
-          <a href="#section-services" class="popup__close">&times;</a>
+          <a href="#popup" class="popup__close">&times;</a>
           <h3 class="popup__heading">
             Sve vrste ženskih frizura
           </h3>
@@ -438,9 +438,11 @@
             fugiat eu! Facilis quae praesentium le impedit, ipsum dignissimos doloribus quibusdam peore cupiditate 
             pariatur ipsa que incidunt laborum minima?
           </p>
-          <a href="#section-contact" class="btn-popup">Rezervišite</a>
+          <a href="#" class="btn-popup">Rezervišite</a>
         </div>
       </div>
+      <div class="popup__overlay hidden"></div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
