@@ -1306,17 +1306,18 @@ body {
         display: none; } }
   .nav__link:link, .nav__link:visited {
     color: sandybrown;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    text-decoration: none; }
   .nav__link:hover, .nav__link:active {
     color: #c7630e; }
-  .nav__link:not(:last-child) {
-    margin-right: 4rem; }
   .nav__item {
     display: inline-block;
     font-size: 1.6rem; }
     @media only screen and (max-width: 75em) {
       .nav__item {
         font-size: 1.4rem; } }
+  .nav__item:not(:last-child) {
+    margin-right: 4rem; }
   .nav__icon-link:link, .nav__icon-link:visited {
     fill: sandybrown;
     transition: all 0.2s; }

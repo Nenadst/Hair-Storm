@@ -24,15 +24,12 @@
   &__link:visited {
     color: $color-brown;
     transition: all 0.2s;
+    text-decoration: none;
   }
 
   &__link:hover,
   &__link:active {
     color: darken($color-brown, 25%);
-  }
-
-  &__link:not(:last-child) {
-    margin-right: 4rem;
   }
 
   &__item {
@@ -42,6 +39,10 @@
     @include respond(tab-land) {
       font-size: 1.4rem;
     }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 4rem;
   }
 
   &__icon-link:link,

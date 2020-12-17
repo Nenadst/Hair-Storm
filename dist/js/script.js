@@ -1,11 +1,39 @@
 "use strict";
+////////////////////////////////////////
+// Page navigation
+
+document.querySelector(".nav__list").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains("nav__link")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+});
+
+// document.querySelectorAll(".nav__link").forEach(function (el) {
+//   el.addEventListener("click", function (e) {
+//     e.preventDefault();
+
+//     const id = this.getAttribute("href");
+//     document.querySelector(id).scrollIntoView({
+//       behavior: "smooth",
+//     });
+//   });
+// });
+
+////////////////////////////////////////
+// Popup
 
 const popup = document.querySelector(".popup");
 const overlay = document.querySelector(".popup__overlay");
 const btnClose = document.querySelector(".popup__close");
 const btnsOpen = document.querySelectorAll(".btn-text");
 
-const openPopup = function () {
+const openPopup = function (e) {
+  e.preventDefault();
   popup.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
@@ -15,8 +43,10 @@ const closePopup = function () {
   overlay.classList.add("hidden");
 };
 
-for (let i = 0; i < btnsOpen.length; i++)
-  btnsOpen[i].addEventListener("click", openPopup);
+btnsOpen.forEach((btn) => btn.addEventListener("click", openPopup));
+
+// for (let i = 0; i < btnsOpen.length; i++)
+//   btnsOpen[i].addEventListener("click", openPopup);
 
 btnClose.addEventListener("click", closePopup);
 overlay.addEventListener("click", closePopup);
