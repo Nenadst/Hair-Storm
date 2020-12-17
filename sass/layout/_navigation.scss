@@ -79,3 +79,10 @@
     }
   }
 }
+
+.nav.sticky {
+  position: fixed;
+  background-color: rgba(247, 237, 237, 0.95);
+  z-index: 1000;
+  top: 0;
+}

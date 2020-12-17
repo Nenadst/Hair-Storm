@@ -1202,6 +1202,11 @@ body {
   @media only screen and (max-width: 75em) {
     .header {
       min-height: 70vh; } }
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .header__logo-box {
     background-color: sandybrown;
     border-radius: 50%;
@@ -1338,6 +1343,12 @@ body {
         width: 2rem; } }
     .nav__icon:hover {
       transform: scale(1.3); }
+
+.nav.sticky {
+  position: fixed;
+  background-color: rgba(247, 237, 237, 0.95);
+  z-index: 1000;
+  top: 0; }
 
 .section-about {
   padding-bottom: 14rem; }
