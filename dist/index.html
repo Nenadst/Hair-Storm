@@ -16,6 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+      <script defer src="js/script.js"></script>
     <title>Hair Storm</title>
   </head>
   <body>
@@ -377,10 +384,8 @@
             </a>
           </div>   
       <div class="contact__box">
-       <div class="contact__map">
-        <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0"
-           marginwidth="0" src="https://maps.google.com/maps?width=80%25&amp;height=600&amp;hl=en&amp;q=koste%20stojanovica%208+(Hair%20Storm)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm"></a></div>
-       </div> 
+       <div class="contact__map" id="map"></div>
+       <div class="contact__form">
       <form class="form">
         <h2 class="form__heading">
           Kontaktirajte nas i zakažite svoj termin
@@ -392,7 +397,7 @@
         <button class="btn-form">
           Pošalji
         </button>
-      </form>
+      </form>   
     </div>
   </div>    
     </div>
@@ -442,6 +447,6 @@
       </div>
       <div class="popup__overlay hidden"></div>
     </div>
-    <script src="js/script.js"></script>
+    
   </body>
 </html>

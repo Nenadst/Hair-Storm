@@ -79,3 +79,17 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 
 headerObserver.observe(header);
+
+////////////////////////////////////////
+// Map
+const map = L.map("map").setView([44.81366, 20.47054], 16);
+
+L.tileLayer("https://{s}.tile.openstreetmap.fr/hot//{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(map);
+
+L.marker([44.81366, 20.47054])
+  .addTo(map)
+  .bindPopup("Studio lepote Hair Storm<br> Koste Stojanovića br.8")
+  .openPopup();
