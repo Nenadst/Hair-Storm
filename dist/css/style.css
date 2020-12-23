@@ -543,7 +543,24 @@ body {
   align-items: center; }
   @media only screen and (max-width: 56.25em) {
     .contact__map {
-      margin-bottom: 5rem; } }
+      margin-bottom: 5rem;
+      min-height: 45rem; } }
+
+/* Popup width is defined in JS using options */
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 5px;
+  padding-right: 0.6rem; }
+
+.leaflet-popup .leaflet-popup-content {
+  font-size: 1.2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .leaflet-popup .leaflet-popup-content {
+      font-size: 1.7rem; } }
+
+.leaflet-popup .leaflet-popup-tip {
+  background-color: rgba(0, 0, 0, 0.7); }
 
 .form {
   display: flex;
@@ -1347,7 +1364,7 @@ body {
 .nav.sticky {
   position: fixed;
   background-color: rgba(247, 237, 237, 0.95);
-  z-index: 1000;
+  z-index: 10000;
   top: 0; }
 
 .section-about {
