@@ -11,11 +11,20 @@
 
   @include respond(phone) {
     justify-content: space-around;
+    padding-top: 10rem;
+    position: relative;
+    background-color: $color-black;
+    z-index: 10;
   }
 
   &__list {
     text-align: center;
+
     @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
       display: none;
     }
   }
@@ -39,10 +48,24 @@
     @include respond(tab-land) {
       font-size: 1.4rem;
     }
+    @include respond(phone) {
+      width: 100%;
+      padding: 2rem 0;
+    }
   }
 
   &__item:not(:last-child) {
     margin-right: 4rem;
+
+    @include respond(phone) {
+      margin: 0;
+    }
+  }
+
+  &__icon-box {
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__icon-link:link,
@@ -85,4 +108,10 @@
   background-color: rgba(247, 237, 237, 0.95);
   z-index: 10000;
   top: 0;
+
+  @include respond(phone) {
+    display: none;
+    overflow: hidden;
+    opacity: 0;
+  }
 }

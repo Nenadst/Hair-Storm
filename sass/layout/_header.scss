@@ -32,6 +32,12 @@
     &:hover {
       transform: scale(1.3);
     }
+
+    @include respond(phone) {
+      position: absolute;
+      top: 2rem;
+      left: 5%;
+    }
   }
 
   &__logo-item {
@@ -139,5 +145,49 @@
 
   &__box {
     margin-top: 8rem;
+
+    @include respond(phone) {
+      position: absolute;
+      top: 7%;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include respond(phone) {
+      position: absolute;
+      min-height: 3rem;
+      min-width: 3rem;
+      top: 8%;
+      right: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 10;
+    }
+  }
+
+  &__span {
+    background-color: $color-brown;
+    width: 2.5rem;
+    height: 0.3rem;
+
+    .toggle &--1 {
+      transform: rotate(-45deg) translate(-4px, 6px);
+    }
+
+    .toggle &--2 {
+      opacity: 0;
+    }
+
+    .toggle &--3 {
+      transform: rotate(45deg) translate(-4px, -6px);
+    }
+  }
+
+  .active {
+    display: block;
   }
 }

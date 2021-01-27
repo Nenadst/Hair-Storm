@@ -93,3 +93,15 @@ L.marker([44.81366, 20.47054])
   .addTo(map)
   .bindPopup("Studio lepote Hair Storm<br> Koste Stojanovića br.8")
   .openPopup();
+
+////////////////////////////////////////
+// Hamburger
+
+const burger = document.querySelector(".header__hamburger");
+const navi = document.querySelector(".nav__list");
+
+burger.addEventListener("click", () => {
+  navi.classList.toggle("active");
+  navi.classList.toggle("nav-active");
+  burger.classList.toggle("toggle");
+});
