@@ -1335,11 +1335,11 @@ body {
     width: 2.5rem;
     height: 0.3rem; }
     .toggle .header__span--1 {
-      transform: rotate(-45deg) translate(-4px, 6px); }
+      transform: rotate(-45deg) translate(-5px, 5.5px); }
     .toggle .header__span--2 {
       opacity: 0; }
     .toggle .header__span--3 {
-      transform: rotate(45deg) translate(-4px, -6px); }
+      transform: rotate(45deg) translate(-5px, -5.5px); }
   .header .active {
     display: block; }
 
@@ -1384,7 +1384,8 @@ body {
     @media only screen and (max-width: 48em) {
       .nav__item {
         width: 100%;
-        padding: 2rem 0; } }
+        padding: 2rem 0;
+        font-size: 1.8rem; } }
   .nav__item:not(:last-child) {
     margin-right: 4rem; }
     @media only screen and (max-width: 48em) {
