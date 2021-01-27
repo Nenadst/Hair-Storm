@@ -1335,11 +1335,11 @@ body {
     width: 2.5rem;
     height: 0.3rem; }
     .toggle .header__span--1 {
-      transform: rotate(-45deg) translate(-5px, 6px); }
+      transform: rotate(-45deg) translate(-5.5px, 6px); }
     .toggle .header__span--2 {
       opacity: 0; }
     .toggle .header__span--3 {
-      transform: rotate(45deg) translate(-5px, -6px); }
+      transform: rotate(45deg) translate(-5.5px, -6px); }
   .header .active {
     display: block; }
 
