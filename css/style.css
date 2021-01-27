@@ -1339,7 +1339,7 @@ body {
     .toggle .header__span--2 {
       opacity: 0; }
     .toggle .header__span--3 {
-      transform: rotate(45deg) translate(-5px, 6px); }
+      transform: rotate(45deg) translate(-5px, -6px); }
   .header .active {
     display: block; }
 
